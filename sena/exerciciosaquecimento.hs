@@ -1,5 +1,5 @@
--- "Lista 1"
--- https://github.com/senapk/funcional_arcade#lista-1
+-- "Aquecimento"
+-- https://github.com/senapk/funcional_arcade#aquecimento
 
 --    @004 01. countNeg
 countNeg xs = length $ filter (<0) xs
@@ -28,7 +28,7 @@ min2 x y
     | otherwise = y
 
 --    @011 01. min3
---    não checa o y <== x na segunda guarda pois se já passou da primeira o x não é o menor
+--    não checa o y <= x na segunda guarda pois se já passou da primeira o x não é o menor
 min3 x y z
     | x <= y && x <= z = x
     | y <= z           = y
@@ -36,8 +36,4 @@ min3 x y z
 
 --    @000 01. soma2
 soma2 x y = x + y
-
---    @007 01. somaImpares
---    o foldr começa a somar com 0, aumentando apenas com os números ímpares
-somaImpares xs = foldr (+) 0 (filter odd xs)
 
